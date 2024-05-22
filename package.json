@@ -42,7 +42,7 @@
 		"check": "tsc",
 		"lint": "prettier --check . --config ../../.prettierrc --ignore-path ../../.gitignore --ignore-path .gitignore",
 		"format": "npm lint --write",
-		"prepublishOnly": "echo \"Updating template repo\" && bash ./scripts/get-osf-template.sh && npm build"
+		"prepublishOnly": "echo \"Updating template repo\" && bash ./scripts/get-osf-template.sh && npm run build"
 	},
 	"files": [
 		"index.js",
