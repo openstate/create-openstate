@@ -18,3 +18,4 @@ echo "done"
 
 rm -rf templates/openstate/src
 cp -a $TEMPLATE_REPO_FOLDER/src templates/openstate/
+cp -a $TEMPLATE_REPO_FOLDER/package.json templates/openstate/package.template.json
