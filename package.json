@@ -1,20 +1,26 @@
 {
 	"name": "create-openstate",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A CLI for creating new Open State projects",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/openstate/create-openstate"
 	},
-  "author": {
-    "email": "info@openstate.eu",
-    "name": "Open State Foundation",
-    "url": "https://openstate.eu"
-  },
-  "contributors": [
-    {"name": "Esmé Lindeman", "email": "esme@lindeman.nu"},
-    {"name": "Mark Lindeman", "email": "mark@openstate.eu"}
-  ],
+	"author": {
+		"email": "info@openstate.eu",
+		"name": "Open State Foundation",
+		"url": "https://openstate.eu"
+	},
+	"contributors": [
+		{
+			"name": "Esmé Lindeman",
+			"email": "esme@lindeman.nu"
+		},
+		{
+			"name": "Mark Lindeman",
+			"email": "mark@openstate.eu"
+		}
+	],
 	"license": "EUPL",
 	"bin": "./bin.js",
 	"main": "./index.js",
