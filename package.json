@@ -1,0 +1,56 @@
+{
+	"name": "create-openstate",
+	"version": "1.0.0",
+	"description": "A CLI for creating new Open State projects",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/openstate/create-openstate"
+	},
+  "author": {
+    "email": "info@openstate.eu",
+    "name": "Open State Foundation",
+    "url": "https://openstate.eu"
+  },
+  "contributors": [
+    {"name": "Esmé Lindeman", "email": "esme@lindeman.nu"},
+    {"name": "Mark Lindeman", "email": "mark@openstate.eu"}
+  ],
+	"license": "EUPL",
+	"bin": "./bin.js",
+	"main": "./index.js",
+	"dependencies": {
+		"@clack/prompts": "^0.7.0",
+		"kleur": "^4.1.5"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.41.0",
+		"@types/gitignore-parser": "^0.0.3",
+		"@types/node": "^20.12.10",
+		"gitignore-parser": "^0.0.2",
+		"lodash": "^4.17.21",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"sucrase": "^3.34.0",
+		"svelte": "^4.2.10",
+		"tiny-glob": "^0.2.9",
+		"typescript": "^5.3.3",
+		"vitest": "^1.5.0"
+	},
+	"scripts": {
+		"build": "node scripts/build-templates",
+		"test": "npm build && vitest run",
+		"check": "tsc",
+		"lint": "prettier --check . --config ../../.prettierrc --ignore-path ../../.gitignore --ignore-path .gitignore",
+		"format": "npm lint --write",
+		"prepublishOnly": "echo \"Updating template repo\" && bash ./scripts/get-osf-template.sh && npm build"
+	},
+	"files": [
+		"index.js",
+		"dist",
+		"bin.js",
+		"utils.js",
+		"types"
+	],
+	"types": "types/index.d.ts",
+	"type": "module"
+}
