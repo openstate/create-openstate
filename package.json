@@ -43,12 +43,12 @@
 		"vitest": "^1.5.0"
 	},
 	"scripts": {
-		"build": "node scripts/build-templates",
+		"build": "echo \"Updating template repo\" && bash ./scripts/get-osf-template.sh && node scripts/build-templates",
 		"test": "npm build && vitest run",
 		"check": "tsc",
 		"lint": "prettier --check . --config ../../.prettierrc --ignore-path ../../.gitignore --ignore-path .gitignore",
 		"format": "npm lint --write",
-		"prepublishOnly": "echo \"Updating template repo\" && bash ./scripts/get-osf-template.sh && npm run build"
+		"prepublishOnly": "npm run build"
 	},
 	"files": [
 		"index.js",

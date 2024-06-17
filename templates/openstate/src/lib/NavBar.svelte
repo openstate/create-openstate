@@ -97,9 +97,10 @@
           {/each}
         </ul>
         <div class="gap-5">
+        <button class="btn btn-primary">Doneer</button>
         <button class="btn btn-outline-primary" on:click={() => goto('/gebruiker/inloggen')}>Inloggen</button>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#zoekformulier" aria-controls="zoekformulier">
-          <Search/>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#zoekformulier" aria-controls="zoekformulier">
+          <Search width="30px" height="20px"/>
         </button>     
       </div> 
       </div>
