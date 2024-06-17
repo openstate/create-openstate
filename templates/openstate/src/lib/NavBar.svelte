@@ -2,6 +2,7 @@
   import exampleLogo from '$lib/assets/example-logo.png';
   import { page } from '$app/stores'
 	import { Search } from 'svelte-bootstrap-icons';
+	import { goto } from '$app/navigation';
   export let title
   interface MenuItem {
     title: string,
@@ -96,7 +97,7 @@
           {/each}
         </ul>
         <div class="gap-5">
-        <button class="btn btn-outline-primary">Inloggen</button>
+        <button class="btn btn-outline-primary" on:click={() => goto('/gebruiker/inloggen')}>Inloggen</button>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#zoekformulier" aria-controls="zoekformulier">
           <Search/>
         </button>     
