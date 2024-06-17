@@ -18,7 +18,8 @@
   .topbar-scroll-opaque {
     margin-top: 40px;
     height:20px;
-    background-color: var(--white);
+    background-color: white;
+    /* Afstemmen op de hoofdkleur van een eventuele foto of achtergrond */
     opacity: 0.8;
   }
 

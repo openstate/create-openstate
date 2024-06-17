@@ -21,9 +21,15 @@
 
 <OpenstateBar />
 <NavBar/>
-<main class="mt-3 mb-5">
+<main class="mt-5 mb-5">
   <div class="container">
     <slot />
   </div>
 </main>
 <Footer/>
+
+<style>
+	.mt-5 {
+		margin-top: 100px !important;
+	}
+</style>
