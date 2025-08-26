@@ -167,9 +167,8 @@ if (relative !== '') {
 	console.log(`  ${i++}: ${bold(cyan(`cd ${path.resolve(relative)}`))}`);
 }
 
-console.log(`  ${i++}: ${bold(cyan(`${package_manager} install`))}`);
+console.log(`  ${i++}: ${bold(cyan(`docker compose up -d`))} or ${bold(cyan(`${package_manager} install && ${package_manager} run dev -- --open`))}`);
 // prettier-ignore
 console.log(`  ${i++}: ${bold(cyan('git init && git add -A && git commit -m "Initial commit"'))} (optional)`);
-console.log(`  ${i++}: ${bold(cyan(`${package_manager} run dev -- --open`))}`);
 
 console.log(`\nTo close the dev server, hit ${bold(cyan('Ctrl-C'))}`);
