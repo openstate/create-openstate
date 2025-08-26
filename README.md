@@ -20,5 +20,8 @@ npm run dev -- --open --host
 # Click on the 'Design kit' tab to see the components, layouts and examples
 ```
 
+## For production using Docker Compose
+see the folder templates/openstate.
+
 ## License
 [European Union Public Licence](LICENSE).
