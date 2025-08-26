@@ -1,6 +1,6 @@
 {
 	"name": "create-openstate",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "A CLI for creating new Open State projects",
 	"repository": {
 		"type": "git",
