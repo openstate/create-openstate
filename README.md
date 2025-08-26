@@ -1,11 +1,19 @@
 # create-openstate
-A CLI for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run...
+A CLI for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run the following and follow the prompts.
 
 ```bash
 npm create openstate@latest
 ```
 
-...and follow the prompts. After that you can use either Docker Compose or npm directly to install and start the project.
+Or if you don't have npm installed
+```bash
+docker run --rm -it -v /home/projects/create-openstate-test:/opt node bash
+cd /opt
+npm create openstate@latest
+# Exit docker and chown the folder
+```
+
+After that you can use either Docker Compose or npm to install and start the project.
 
 ## To quickly test this package
 ```bash
