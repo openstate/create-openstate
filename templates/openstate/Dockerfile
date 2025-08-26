@@ -5,7 +5,7 @@ RUN npm install
 COPY . ./
 RUN npm run build
 
-FROM node:lts
+FROM node:22-alpine
 LABEL Open State Foundation | ~TODO~ | <developers@openstate.eu>
 WORKDIR /app
 COPY --from=build /app/build /app
