@@ -28,6 +28,18 @@ npm run dev -- --open --host
 # Click on the 'Design kit' tab to see the components, layouts and examples
 ```
 
+## Publish on npm
+Clone or pull https://github.com/openstate/create-openstate and https://github.com/openstate/create-openstate-template to make sure that you have the latest commits and check that the version number is updated in `package.json` and `package-lock.json`.
+
+```bash
+docker run --rm -it -v <ABSOLUTE_PATH_TO>/create-openstate:/opt/create-openstate -v <ABSOLUTE_PATH_TO>/create-openstate-template:/opt/create-openstate-template node:22 bash
+cd /opt
+npm install gitignore-parser
+git config --global --add safe.directory /opt/create-openstate-template
+npm login
+npm publish
+```
+
 ## Notes
 The folder `templates/openstate` is based on https://github.com/openstate/create-openstate-template and is updated when running `npm build` (which is also run during `npm publish`).
 
