@@ -5,7 +5,7 @@ A CLI for creating new [Open State](https://openstate.eu) project website using 
 npm create openstate@latest
 ```
 
-...and follow the prompts.
+...and follow the prompts. After that you can use either Docker Compose or npm directly to install and start the project.
 
 ## To quickly test this package
 ```bash
