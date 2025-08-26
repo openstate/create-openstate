@@ -13,7 +13,7 @@ console.log(`
 ${grey(`create-openspending version ${version}`)}
 `);
 
-p.intro('Welcome to Open Spending website generator!');
+p.intro('Welcome to the Open State website generator!');
 
 if (cwd === '.') {
 	const dir = await p.text({
