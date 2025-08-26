@@ -1,5 +1,5 @@
 # create-openstate
-A CLI for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run the following and follow the prompts.
+A CLI [npm package](www.npmjs.com/package/create-openstate) for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run the following and follow the prompts.
 
 ```bash
 npm create openstate@latest
