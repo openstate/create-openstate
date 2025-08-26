@@ -1,5 +1,5 @@
 # create-openstate
-A CLI for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run the following and follow the prompts.
+A CLI [npm package](www.npmjs.com/package/create-openstate) for creating new [Open State](https://openstate.eu) project website using [SvelteKit](https://kit.svelte.dev). Just run the following and follow the prompts.
 
 ```bash
 npm create openstate@latest
@@ -7,7 +7,7 @@ npm create openstate@latest
 
 Or if you don't have npm installed
 ```bash
-docker run --rm -it -v /home/projects/create-openstate-test:/opt node bash
+docker run --rm -it -v /home/projects/create-openstate-test:/opt node:22-alpine sh
 cd /opt
 npm create openstate@latest
 # Exit docker and chown the folder
@@ -17,7 +17,7 @@ After that you can use either Docker Compose or npm to install and start the pro
 
 ## To quickly test this package
 ```bash
-docker run --rm -it node bash
+docker run --rm -it node:22-alpine sh
 cd /opt
 mkdir openstate
 cd openstate
@@ -28,8 +28,20 @@ npm run dev -- --open --host
 # Click on the 'Design kit' tab to see the components, layouts and examples
 ```
 
-## For production using Docker Compose
-see the folder templates/openstate.
+## Publish on npm
+Clone or pull https://github.com/openstate/create-openstate and https://github.com/openstate/create-openstate-template to make sure that you have the latest commits and check that the version number is updated in `package.json` and `package-lock.json`.
+
+```bash
+docker run --rm -it -v <ABSOLUTE_PATH_TO>/create-openstate:/opt/create-openstate -v <ABSOLUTE_PATH_TO>/create-openstate-template:/opt/create-openstate-template node:22 bash
+cd /opt
+npm install gitignore-parser
+git config --global --add safe.directory /opt/create-openstate-template
+npm login
+npm publish
+```
+
+## Notes
+The folder `templates/openstate` is based on https://github.com/openstate/create-openstate-template and is updated when running `npm build` (which is also run during `npm publish`).
 
 ## License
 [European Union Public Licence](LICENSE).
