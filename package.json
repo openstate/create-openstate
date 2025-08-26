@@ -1,17 +1,21 @@
 {
 	"name": "create-openstate",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "A CLI for creating new Open State projects",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/openstate/create-openstate"
 	},
 	"author": {
-		"email": "info@openstate.eu",
+		"email": "developers@openstate.eu",
 		"name": "Open State Foundation",
 		"url": "https://openstate.eu"
 	},
 	"contributors": [
+		{
+			"name": "Sicco van Sas",
+			"email": "sicco@openstate.eu"
+		},
 		{
 			"name": "Esmé Lindeman",
 			"email": "esme@lindeman.nu"
