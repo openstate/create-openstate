@@ -7,7 +7,7 @@ npm create openstate@latest
 
 Or if you don't have npm installed
 ```bash
-docker run --rm -it -v /home/projects/create-openstate-test:/opt node:22-alpine bash
+docker run --rm -it -v /home/projects/create-openstate-test:/opt node:22-alpine sh
 cd /opt
 npm create openstate@latest
 # Exit docker and chown the folder
@@ -17,7 +17,7 @@ After that you can use either Docker Compose or npm to install and start the pro
 
 ## To quickly test this package
 ```bash
-docker run --rm -it node:22-alpine bash
+docker run --rm -it node:22-alpine sh
 cd /opt
 mkdir openstate
 cd openstate
