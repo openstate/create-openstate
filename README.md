@@ -28,8 +28,8 @@ npm run dev -- --open --host
 # Click on the 'Design kit' tab to see the components, layouts and examples
 ```
 
-## For production using Docker Compose
-see the folder templates/openstate.
+## Notes
+The folder `templates/openstate` is based on https://github.com/openstate/create-openstate-template and is updated when running `npm build` (which is also run during `npm publish`).
 
 ## License
 [European Union Public Licence](LICENSE).
