@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.1-next.0",
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "workspace:*"
+		"@sveltejs/adapter-node": "workspace:*"
 	},
 	"type": "module"
 }
