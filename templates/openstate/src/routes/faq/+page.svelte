@@ -19,7 +19,7 @@
   </script>
 
 
-<h1>Veelgestelde vragem</h1>
+<h1>Veelgestelde vragen</h1>
 
 <button on:click={expandOrCollapseAll} class="btn btn-primary mb-3">Alles {collapseStatusNext}</button>
 
