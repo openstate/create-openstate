@@ -10,7 +10,7 @@ const { version } = JSON.parse(fs.readFileSync(new URL('package.json', import.me
 let cwd = process.argv[2] || '.';
 
 console.log(`
-${grey(`create-openspending version ${version}`)}
+${grey(`create-openstate version ${version}`)}
 `);
 
 p.intro('Welcome to the Open State website generator!');
